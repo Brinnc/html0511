@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>3의배수마다별</title>
+
+<script>
+
+let count=0; //정수를 1씩 누적시킬 변수 선언
+
+function setCount(){
+	count++; //count=count+1
+	//let 변수=삼항연산자에게 10의배수이냐를 판단
+	let n=(count%3==0)? "★":count;
+	document.querySelector("div").innerText=n; //id없이 요소 조정
+}
+	
+//for(let i=1; i<=100; i++){document.queryselector("i<br>");}
+
+
+</script>
+</head>
+<body>
+	<button onClick="setCount()">카운터</button>
+	<div>카운터 메세지 예정</div>
+</body>
+</html>
